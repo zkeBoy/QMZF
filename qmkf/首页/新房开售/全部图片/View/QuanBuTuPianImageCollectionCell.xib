@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BZe-Ll-dwb" customClass="QuanBuTuPianImageCollectionCell" customModule="骑马找房" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="326"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_03" translatesAutoresizingMaskIntoConstraints="NO" id="Ud7-ib-shU">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="326"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ud7-ib-shU" secondAttribute="trailing" id="141-3W-cJj"/>
+                <constraint firstItem="Ud7-ib-shU" firstAttribute="leading" secondItem="BZe-Ll-dwb" secondAttribute="leading" id="HJf-y5-Cv1"/>
+                <constraint firstAttribute="bottom" secondItem="Ud7-ib-shU" secondAttribute="bottom" id="Rlh-hD-VbG"/>
+                <constraint firstItem="Ud7-ib-shU" firstAttribute="top" secondItem="BZe-Ll-dwb" secondAttribute="top" id="gHU-5y-umR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="Ud7-ib-shU" id="Mz0-xP-Tlo"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-36.830357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_03" width="1920" height="1150"/>
+    </resources>
+</document>

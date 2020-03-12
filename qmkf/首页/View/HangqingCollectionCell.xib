@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HangqingCollectionCell" customModule="骑马找房" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_hq_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-Gk-M4a">
+                    <rect key="frame" x="0.0" y="0.0" width="143" height="100"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_hq_detail" translatesAutoresizingMaskIntoConstraints="NO" id="bj0-YP-gXc">
+                    <rect key="frame" x="79" y="16" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="VC1-k1-9jN"/>
+                        <constraint firstAttribute="width" secondItem="bj0-YP-gXc" secondAttribute="height" id="Z7y-9e-Vjr"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_rise" translatesAutoresizingMaskIntoConstraints="NO" id="6fW-H5-LWx">
+                    <rect key="frame" x="62" y="41.5" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6fW-H5-LWx" secondAttribute="height" id="bVU-ZR-JsT"/>
+                        <constraint firstAttribute="width" constant="12" id="eQ3-vz-2NF"/>
+                    </constraints>
+                </imageView>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_decline" translatesAutoresizingMaskIntoConstraints="NO" id="HYd-ps-2SM">
+                    <rect key="frame" x="62" y="41.5" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="Cra-kU-kYG"/>
+                        <constraint firstAttribute="width" secondItem="HYd-ps-2SM" secondAttribute="height" id="sPP-Bt-rdE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成都行情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ag-cg-6mo">
+                    <rect key="frame" x="8" y="12" width="66" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市行情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXE-Gy-NBQ">
+                    <rect key="frame" x="8" y="40" width="50" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-3.88%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMq-9L-vr0">
+                    <rect key="frame" x="8" y="59" width="41.5" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bSc-Gk-M4a" secondAttribute="trailing" id="4nS-Qp-Zee"/>
+                <constraint firstItem="bj0-YP-gXc" firstAttribute="leading" secondItem="5ag-cg-6mo" secondAttribute="trailing" constant="5" id="5Q9-Vu-S0i"/>
+                <constraint firstItem="bSc-Gk-M4a" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="758-UU-pGx"/>
+                <constraint firstItem="bSc-Gk-M4a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JJw-Vb-5w0"/>
+                <constraint firstItem="kXE-Gy-NBQ" firstAttribute="leading" secondItem="5ag-cg-6mo" secondAttribute="leading" id="Lx0-Ud-3Nz"/>
+                <constraint firstItem="lMq-9L-vr0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="MsD-f9-JcQ"/>
+                <constraint firstItem="5ag-cg-6mo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="NyW-df-Gvs"/>
+                <constraint firstItem="6fW-H5-LWx" firstAttribute="centerY" secondItem="kXE-Gy-NBQ" secondAttribute="centerY" id="OYe-9r-HrK"/>
+                <constraint firstItem="6fW-H5-LWx" firstAttribute="centerY" secondItem="HYd-ps-2SM" secondAttribute="centerY" id="OyW-3X-I4l"/>
+                <constraint firstItem="5ag-cg-6mo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="Ukg-jV-TAT"/>
+                <constraint firstItem="6fW-H5-LWx" firstAttribute="centerX" secondItem="HYd-ps-2SM" secondAttribute="centerX" id="ag5-qb-Vsa"/>
+                <constraint firstItem="kXE-Gy-NBQ" firstAttribute="top" secondItem="5ag-cg-6mo" secondAttribute="bottom" constant="8" id="amR-yc-Hwb"/>
+                <constraint firstItem="bSc-Gk-M4a" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fCo-hI-m2n"/>
+                <constraint firstItem="bj0-YP-gXc" firstAttribute="centerY" secondItem="5ag-cg-6mo" secondAttribute="centerY" id="feW-eU-2WW"/>
+                <constraint firstItem="HYd-ps-2SM" firstAttribute="width" secondItem="HYd-ps-2SM" secondAttribute="height" id="gJK-nw-z4b"/>
+                <constraint firstItem="lMq-9L-vr0" firstAttribute="top" secondItem="kXE-Gy-NBQ" secondAttribute="bottom" constant="4" id="k8C-uK-kM3"/>
+                <constraint firstItem="6fW-H5-LWx" firstAttribute="leading" secondItem="kXE-Gy-NBQ" secondAttribute="trailing" constant="4" id="tJR-b9-xXA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backImageView" destination="bSc-Gk-M4a" id="PoV-lx-wpj"/>
+                <outlet property="detailIconDown" destination="HYd-ps-2SM" id="8Iu-Jk-942"/>
+                <outlet property="detailIconRise" destination="6fW-H5-LWx" id="cay-QE-xic"/>
+                <outlet property="detailLabel" destination="kXE-Gy-NBQ" id="f9Q-wr-WMf"/>
+                <outlet property="detailLabel1" destination="lMq-9L-vr0" id="qKj-BB-5Ol"/>
+                <outlet property="titleIcon" destination="bj0-YP-gXc" id="Mpj-bB-i73"/>
+                <outlet property="titleLabel" destination="5ag-cg-6mo" id="XfN-qD-00e"/>
+            </connections>
+            <point key="canvasLocation" x="-64.492753623188406" y="-113.83928571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_decline" width="12" height="7"/>
+        <image name="icon_hq_detail" width="12" height="12"/>
+        <image name="icon_rise" width="12" height="7"/>
+        <image name="img_hq_bg" width="112" height="80"/>
+    </resources>
+</document>

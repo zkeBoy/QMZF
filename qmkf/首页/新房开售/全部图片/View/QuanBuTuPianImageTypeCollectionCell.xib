@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jLn-5q-R9n" customClass="QuanBuTuPianImageTypeCollectionCell" customModule="骑马找房" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="排序" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThX-GV-4Su">
+                    <rect key="frame" x="4" y="9.5" width="406" height="28"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Gox-Nd-Wz5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ThX-GV-4Su" firstAttribute="centerX" secondItem="jLn-5q-R9n" secondAttribute="centerX" id="17Y-5E-L88"/>
+                <constraint firstItem="ThX-GV-4Su" firstAttribute="centerY" secondItem="jLn-5q-R9n" secondAttribute="centerY" id="8wJ-z7-onY"/>
+                <constraint firstItem="ThX-GV-4Su" firstAttribute="leading" secondItem="jLn-5q-R9n" secondAttribute="leading" constant="4" id="ejQ-Jc-Gzk"/>
+                <constraint firstAttribute="trailing" secondItem="ThX-GV-4Su" secondAttribute="trailing" constant="4" id="xUi-xO-D5Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ONm-fC-Dke"/>
+            <connections>
+                <outlet property="titleLabel" destination="ThX-GV-4Su" id="R8i-Y3-LwH"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-129.57589285714286"/>
+        </view>
+    </objects>
+</document>

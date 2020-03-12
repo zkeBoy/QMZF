@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="骑马找房" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0S-cB-AuG">
+                                <rect key="frame" x="87" y="201" width="240" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBn-Zb-Kv3">
+                                        <rect key="frame" x="31" y="26" width="157" height="76"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="XvC-Rj-67J"/>
+                                            <constraint firstAttribute="width" constant="157" id="u4K-TI-nvJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mBn-Zb-Kv3" firstAttribute="leading" secondItem="Q0S-cB-AuG" secondAttribute="leading" constant="31" id="7CR-Ua-aGH"/>
+                                    <constraint firstItem="mBn-Zb-Kv3" firstAttribute="top" secondItem="Q0S-cB-AuG" secondAttribute="top" constant="26" id="cRt-gh-Ibm"/>
+                                    <constraint firstAttribute="bottom" secondItem="mBn-Zb-Kv3" secondAttribute="bottom" constant="26" id="tSZ-9S-jwt"/>
+                                    <constraint firstAttribute="trailing" secondItem="mBn-Zb-Kv3" secondAttribute="trailing" constant="52" id="zfo-zA-mSq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="HdL-lO-vAP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LAw-uc-wT9"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q0S-cB-AuG" secondAttribute="trailing" constant="87" id="4zh-9p-iwH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q0S-cB-AuG" secondAttribute="bottom" constant="533" id="BLJ-ZT-hzZ"/>
+                            <constraint firstItem="Q0S-cB-AuG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="157" id="Sao-92-Pvg"/>
+                            <constraint firstItem="Q0S-cB-AuG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="cU9-V3-afE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zNX-KP-oDT"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KkK-Rc-bov">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ups-ai-Eeb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gmB-gJ-zGG">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tx1-WQ-xec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncp-6D-YZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>

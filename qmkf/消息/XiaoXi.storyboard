@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YlC-Tg-6LY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Xiao Xi View Controller-->
+        <scene sceneID="WQP-Mn-Cvk">
+            <objects>
+                <viewController id="YlC-Tg-6LY" customClass="XiaoXiViewController" customModule="骑马找房" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4VC-tY-0MU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="doX-FS-d5R">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yHn-GP-XeA" firstAttribute="trailing" secondItem="doX-FS-d5R" secondAttribute="trailing" id="6Hx-25-RcF"/>
+                            <constraint firstItem="doX-FS-d5R" firstAttribute="leading" secondItem="yHn-GP-XeA" secondAttribute="leading" id="e7t-b0-WcC"/>
+                            <constraint firstAttribute="bottom" secondItem="doX-FS-d5R" secondAttribute="bottom" id="ge4-5K-FG0"/>
+                            <constraint firstItem="doX-FS-d5R" firstAttribute="top" secondItem="yHn-GP-XeA" secondAttribute="top" id="jjk-s7-wwh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yHn-GP-XeA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p3L-a6-LFn"/>
+                    <connections>
+                        <outlet property="tableView" destination="doX-FS-d5R" id="6Mf-JT-Qjk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXX-71-7vj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286.9565217391305" y="-288.61607142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JNS-Lo-r2e">
+            <objects>
+                <navigationController storyboardIdentifier="XiaoXiNav" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="q4f-U5-XJT" customClass="ZZNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="56p-PT-1wo">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YlC-Tg-6LY" kind="relationship" relationship="rootViewController" id="Rzg-3T-qKg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNe-Rj-LGx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="376.81159420289856" y="-288.61607142857139"/>
+        </scene>
+    </scenes>
+</document>

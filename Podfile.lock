@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AMap3DMap (7.1.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.6.0)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.17)
+  - MJRefresh (3.2.3)
+  - SDWebImage (5.3.3):
+    - SDWebImage/Core (= 5.3.3)
+  - SDWebImage/Core (5.3.3)
+  - SnapKit (5.0.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AMap3DMap
+  - Masonry
+  - MJExtension (~> 3.0.10)
+  - MJRefresh
+  - SDWebImage
+  - SnapKit
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Alamofire
+    - AMap3DMap
+    - AMapFoundation
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDWebImage
+    - SnapKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AMap3DMap: ef26e2fb120ae9f1635b4b26b28df6d1379a05f0
+  AMapFoundation: bc2f6e077b9279942734ba55f9624222fcf42848
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
+  SDWebImage: 51ab1ce3ebd20dec6665ae8ba25c928da323db41
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 3f4f2c46695dec5069f89b95b6b33c779aa2fd9e
+
+COCOAPODS: 1.9.0.beta.2

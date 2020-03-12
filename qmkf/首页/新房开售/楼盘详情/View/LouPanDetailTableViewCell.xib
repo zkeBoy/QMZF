@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JUJ-3a-pHR" customClass="LouPanDetailTableViewCell" customModule="骑马找房" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="354-ns-b9d">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小高程" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDW-dC-GNN">
+                            <rect key="frame" x="85.5" y="7" width="43" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建筑类型：" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvm-r6-ubP">
+                            <rect key="frame" x="12" y="8.5" width="71.5" height="14"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="14" id="yTb-GG-CD8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vvm-r6-ubP" firstAttribute="leading" secondItem="354-ns-b9d" secondAttribute="leading" constant="12" id="0f0-bf-gYk"/>
+                        <constraint firstItem="vvm-r6-ubP" firstAttribute="centerY" secondItem="354-ns-b9d" secondAttribute="centerY" id="Onj-Nk-HgL"/>
+                        <constraint firstItem="XDW-dC-GNN" firstAttribute="leading" secondItem="vvm-r6-ubP" secondAttribute="trailing" constant="2" id="ZLu-Q8-x4L"/>
+                        <constraint firstAttribute="height" constant="31" id="hGn-0h-uS5"/>
+                        <constraint firstItem="XDW-dC-GNN" firstAttribute="centerY" secondItem="vvm-r6-ubP" secondAttribute="centerY" id="wdl-rT-jlq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="354-ns-b9d" firstAttribute="leading" secondItem="Eld-l6-OcQ" secondAttribute="leading" id="Hbu-Se-Jzl"/>
+                <constraint firstItem="354-ns-b9d" firstAttribute="top" secondItem="JUJ-3a-pHR" secondAttribute="top" id="jkx-xV-Tmo"/>
+                <constraint firstItem="Eld-l6-OcQ" firstAttribute="bottom" secondItem="354-ns-b9d" secondAttribute="bottom" id="k7X-DL-cHw"/>
+                <constraint firstItem="Eld-l6-OcQ" firstAttribute="trailing" secondItem="354-ns-b9d" secondAttribute="trailing" id="wMj-iz-yNm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Eld-l6-OcQ"/>
+            <point key="canvasLocation" x="131.8840579710145" y="323.10267857142856"/>
+        </view>
+    </objects>
+</document>

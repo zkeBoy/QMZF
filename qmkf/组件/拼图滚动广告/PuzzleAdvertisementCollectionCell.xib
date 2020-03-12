@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eZk-7z-Hl7" customClass="PuzzleAdvertisementCollectionCell" customModule="骑马找房" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcW-8D-cHx">
+                    <rect key="frame" x="6" y="0.0" width="198" height="896"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cr8-Gy-m7i">
+                    <rect key="frame" x="210" y="447" width="198" height="449"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UeD-dv-sou">
+                    <rect key="frame" x="210" y="0.0" width="198" height="439"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cr8-Gy-m7i" firstAttribute="width" secondItem="UeD-dv-sou" secondAttribute="width" id="2Gt-4h-nVy"/>
+                <constraint firstAttribute="trailing" secondItem="cr8-Gy-m7i" secondAttribute="trailing" constant="6" id="5Zm-jx-soP"/>
+                <constraint firstAttribute="trailing" secondItem="UeD-dv-sou" secondAttribute="trailing" constant="6" id="CFn-zP-Qsz"/>
+                <constraint firstItem="UeD-dv-sou" firstAttribute="width" secondItem="rcW-8D-cHx" secondAttribute="width" id="D9c-rj-KlC"/>
+                <constraint firstItem="UeD-dv-sou" firstAttribute="leading" secondItem="rcW-8D-cHx" secondAttribute="trailing" constant="6" id="Ivm-bs-UEZ"/>
+                <constraint firstItem="rcW-8D-cHx" firstAttribute="leading" secondItem="eZk-7z-Hl7" secondAttribute="leading" constant="6" id="N9a-y6-9Yn"/>
+                <constraint firstItem="cr8-Gy-m7i" firstAttribute="top" secondItem="UeD-dv-sou" secondAttribute="bottom" constant="8" id="Oa2-JD-KRo"/>
+                <constraint firstItem="cr8-Gy-m7i" firstAttribute="bottom" secondItem="rcW-8D-cHx" secondAttribute="bottom" id="aNz-DI-NK7"/>
+                <constraint firstItem="cr8-Gy-m7i" firstAttribute="height" secondItem="UeD-dv-sou" secondAttribute="height" multiplier="1.0232" id="brO-fe-rlz"/>
+                <constraint firstItem="rcW-8D-cHx" firstAttribute="top" secondItem="eZk-7z-Hl7" secondAttribute="top" id="dBS-id-3Bk"/>
+                <constraint firstItem="UeD-dv-sou" firstAttribute="top" secondItem="rcW-8D-cHx" secondAttribute="top" id="o2C-mJ-VGe"/>
+                <constraint firstAttribute="bottom" secondItem="rcW-8D-cHx" secondAttribute="bottom" id="xMa-hY-n8i"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="rcW-8D-cHx" id="Lhz-lf-DGO"/>
+                <outlet property="imgView02" destination="cr8-Gy-m7i" id="2xt-zi-oTQ"/>
+                <outlet property="imgview01" destination="UeD-dv-sou" id="CRJ-1H-Xdj"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>
