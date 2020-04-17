@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -271,6 +271,7 @@
 		04F9AA03239B9A2A00C85F68 /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9AA02239B9A2A00C85F68 /* PlaceholderTextView.swift */; };
 		04F9AA06239BA62500C85F68 /* BindPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9AA05239BA62500C85F68 /* BindPhoneViewController.swift */; };
 		04F9AA08239BAC9E00C85F68 /* zQMKFStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F9AA07239BAC9E00C85F68 /* zQMKFStatus.swift */; };
+		0A8C86862419E7AB002C207C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8C86852419E7AB002C207C /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		8BC40B44A2E6792CD1B98A5D /* Pods_qmkf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 329D6EF7F1D33DBA929624BA /* Pods_qmkf.framework */; };
 /* End PBXBuildFile section */
 
@@ -603,6 +604,7 @@
 		04F9AA02239B9A2A00C85F68 /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 		04F9AA05239BA62500C85F68 /* BindPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindPhoneViewController.swift; sourceTree = "<group>"; };
 		04F9AA07239BAC9E00C85F68 /* zQMKFStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zQMKFStatus.swift; sourceTree = "<group>"; };
+		0A8C86852419E7AB002C207C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329D6EF7F1D33DBA929624BA /* Pods_qmkf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qmkf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6619B278EEA55866D57A990C /* Pods-qmkf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qmkf.debug.xcconfig"; path = "Target Support Files/Pods-qmkf/Pods-qmkf.debug.xcconfig"; sourceTree = "<group>"; };
 		F14C396634509AA19E8D3FE1 /* Pods-qmkf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qmkf.release.xcconfig"; path = "Target Support Files/Pods-qmkf/Pods-qmkf.release.xcconfig"; sourceTree = "<group>"; };
@@ -613,6 +615,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8C86862419E7AB002C207C /* Alamofire.framework in Frameworks */,
 				048EF4DE24041D3B00353A1E /* MobileCoreServices.framework in Frameworks */,
 				8BC40B44A2E6792CD1B98A5D /* Pods_qmkf.framework in Frameworks */,
 			);
@@ -2006,6 +2009,7 @@
 		8B832865E36789958EB06EF0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A8C86852419E7AB002C207C /* Alamofire.framework */,
 				048EF4DD24041D3A00353A1E /* MobileCoreServices.framework */,
 				329D6EF7F1D33DBA929624BA /* Pods_qmkf.framework */,
 			);
@@ -2653,7 +2657,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2VHFZ6C593;
+				DEVELOPMENT_TEAM = VZCCWUN8KC;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2669,7 +2673,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/qmkf/config/OCBase/Tools/视屏通话/Depend/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjy.qmkf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zkeBoy.qmzf;
 				PRODUCT_NAME = "骑马找房";
 				SWIFT_OBJC_BRIDGING_HEADER = "qmkf/config/qmkf-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2686,7 +2690,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2VHFZ6C593;
+				DEVELOPMENT_TEAM = VZCCWUN8KC;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2702,7 +2706,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/qmkf/config/OCBase/Tools/视屏通话/Depend/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sjy.qmkf;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zkeBoy.qmzf;
 				PRODUCT_NAME = "骑马找房";
 				SWIFT_OBJC_BRIDGING_HEADER = "qmkf/config/qmkf-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

@@ -56,11 +56,12 @@ func post(_ url:String,parameters:[String : Any]? = nil, _ showToastActivity : B
         switch response.result{
         case .success(let json):
             if (ZJSON(json)["code"].int == 200) {
+                //数据回调
                 finishedCallback(response.result.value as Any)
                
                 if showToast { 
                     if ZJSON(json)["data"]["records"].exists() && ZJSON(json)["data"]["records"].count == 0 {
-                                       getCurrentWindow()?.makeToast("   无数据   ", duration: 0.6, position: NSValue.init(cgPoint: getCurrentWindow()!.center))
+                        getCurrentWindow()?.makeToast("   无数据   ", duration: 0.6, position: NSValue.init(cgPoint: getCurrentWindow()!.center))
                     } else {
                         getCurrentWindow()?.makeToast("    成功    ", duration: 0.6, position: NSValue.init(cgPoint: getCurrentWindow()!.center))
                     }

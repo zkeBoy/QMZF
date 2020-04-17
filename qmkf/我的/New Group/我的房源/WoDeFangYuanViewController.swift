@@ -23,20 +23,19 @@ class WoDeFangYuanViewController: ShowNavibarViewController {
     }
     
     @objc func refreshData() {
-
-           var parameters : ZParameters = [
-                   "curPage": 0,
-                   "name": "",
-                   "newOrSecond": "",
-                   "pageSize": 0,
-                   "status": ""
-               ]
-           weak var weakSelf = self
-           post("hou-sell/list", parameters: parameters, true, false) {(result) in
+        var parameters : ZParameters = [
+                "curPage": 0,
+                "name": "",
+                "newOrSecond": "",
+                "pageSize": 0,
+                "status": ""
+            ]
+        weak var weakSelf = self
+        post("hou-sell/list", parameters: parameters, true, false) {(result) in
             weakSelf?.zjsonModel = ZJSON(result)
             weakSelf?.initTable(weakSelf!.tableView)
-           }
-           self.tableView.mj_header?.endRefreshing()
+        }
+        self.tableView.mj_header?.endRefreshing()
     }
     
     func initTable(_ table: UITableView) {

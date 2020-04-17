@@ -31,7 +31,7 @@ class ZiXunViewController: HideNavibarViewController {
         self.tableHeaderView.frame = CGRect(x: 0, y: 0, width: zScreenWidth, height: zSetWidth(220))
         tableView.tableHeaderView = self.tableHeaderView
         
-        let cellAdapter = ZuFangCellAdapter(tableView: tableView, datas: zjsonModel["data"]["records"] ?? [], xib:true)
+        let cellAdapter = ZuFangCellAdapter(tableView: tableView, datas: zjsonModel["data"]["records"], xib:true)
         let adapter = BaseSectionAdapter(cellAdapter: cellAdapter, header: sectionHeaderView,height: zSetWidth(32))
         self.tableView.dataSource = adapter
         self.tableView.delegate = adapter
